@@ -46,13 +46,21 @@ This project aims to create a user-friendly website that serves as a single sour
 
 wku-hrl-handbook/
 ├── README.md # This file
+
 ├── index.html # Main page
+
 ├── css/ # CSS Stylesheets
+
 │ └── style.css # Main stylesheet
+
 ├── js/ # JavaScript files
+
 │ └── script.js # Main script file
+
 ├── img/ # Images
+
 │ └── logo.png # WKU HRL Logo
+
 └── ... # Other files and directories
 
 ## Getting Started
