@@ -4,61 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WKU HRL Handbook</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #a62929; /* WKU Red */
-            color: white;
-            padding: 1em;
-            text-align: center;
-        }
-        nav {
-            background-color: #333;
-            color: white;
-            padding: 0.5em;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 0.5em 1em;
-        }
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            background-color: white;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .search-bar {
-            margin-bottom: 20px;
-        }
-        .button {
-            background-color: #a62929;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-        }
-        .on-call-indicator {
-            background-color: lightblue;
-            padding: 10px;
-            margin-top: 10px;
-        }
-        footer {
-            text-align: center;
-            padding: 1em;
-            background-color: #333;
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -93,13 +39,38 @@
             </div>
         </section>
 
-        <section class="hall-phone-numbers">
-            <h2>Hall Phone Numbers</h2>
-            <ul>
-                <li>Barnes Hall: 270-555-1212</li>
-                <li> России Hall: 270-555-1313</li>
-                <!-- More halls here -->
-            </ul>
+        <section class = "contact-information">
+            <details>
+                <summary>Emergency and Important Contact Information</summary>
+                <p><strong>Emergency:</strong> 911</p>
+                <p><strong>WKU Police Department:</strong> (270) 745-2548 <a href="https://www.wku.edu/police/index.php">(More Information)</a></p>
+                <p><strong>Evening Escort Service:</strong> (270) 745-3333 <a href="https://www.wku.edu/police/escortshomepage.php">(More Information)</a></p>
+                <p><strong>After Hours Emergency Maintenance:</strong> (270) 745-2548</p>
+                <p><strong>Facilities Management:</strong> (270) 745-3253</p>
+                <p><strong>Housing & Residence Life Office:</strong> (270) 745-4359</p>
+            </details>
+
+            <div class="dropdown">
+                <button class="dropbtn">Hall Front Desk Numbers</button>
+                <div class="dropdown-content">
+                    <a href="#">Bates Runner Hall: (270) 936-2255</a>
+                    <a href="#">Douglas Keen Hall: (270) 936-0246</a>
+                    <a href="#">Gilbert Hall: (270) 936-2595</a>
+                    <a href="#">Hilltopper Hall: (270) 936-0015</a>
+                    <a href="#">Hugh Poland Hall: (270) 936-2191</a>
+                    <a href="#">McCormack Hall: (270) 936-3191</a>
+                    <a href="#">McLean Hall: (270) 936-3991</a>
+                    <a href="#">Meredith Hall: (270) 936-0196</a>
+                    <a href="#">Minton Hall: (270) 936-4756</a>
+                    <a href="#">Munday Hall: (270) 936-3494</a>
+                    <a href="#">Normal Hall: (270) 936-0499</a>
+                    <a href="#">Pearce Ford Tower: (270) 936-2442</a>
+                    <a href="#">Regents Hall: (270) 936-0494</a>
+                    <a href="#">Rodes Harlin Hall: (270) 936-4691</a>
+                    <a href="#">Southwest Hall: (270) 936-3092</a>
+                    <a href="#">Zacharias Hall: (270) 936-0219</a>
+                </div>
+            </div>
         </section>
 
         <section class="updates">
@@ -128,7 +99,7 @@
         </section>
     </div>
 
-    <footer>
+    <footer class = "footer">
         <p>&copy; 2025 WKU HRL Handbook</p>
     </footer>
 
