@@ -55,8 +55,6 @@ wku-hrl-handbook/
 │ └── logo.png # WKU HRL Logo
 └── ... # Other files and directories
 
-text
-
 ## Getting Started
 
 1.  Clone the repository: `git clone [repository URL]`
