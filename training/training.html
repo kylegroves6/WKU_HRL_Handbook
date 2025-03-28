@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Head of the training file -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,19 +16,30 @@
 
 </head>
 
+<!-- Body of the about file -->
+
 <body>
 
+    <!-- Includes the header container coded inside the header.js script file. The header is consistent across all pages. -->
     <header>
         <div id="headerContainer"></div>
     </header>
 
+    <!-- Has a navContainer div that is filled with the navigation bar coded inside the nav.js script file. The nav bar is consistent across all pages. -->
     <div id="navContainer"></div>
 
+    <!-- The container div is where the content of the page goes. -->
+    <!-- TODO: The trainingContent div will be filled with the training content dynamically using JavaScript. -->
+    <!-- **NOTE:**
+        I currently have a link to the Google Drive folder with all of the PDFS provided to new hires. I will derive content for this page from it in the final version -->
     <div class="container">
-        <p>Possible PDF Content to Derive for Draft 3: <a href="https://drive.google.com/drive/folders/15J8VVRCH2LqxhtN8i2mb6Nhahme0Fi_M?usp=sharing">Google Drive Link w/ PDFs</a></p>
+        <p>Possible PDF Content to Derive for Draft 3: <a
+                href="https://drive.google.com/drive/folders/15J8VVRCH2LqxhtN8i2mb6Nhahme0Fi_M?usp=sharing">Google Drive
+                Link w/ PDFs</a></p>
         <h2>Training Tracks</h2>
         <div id="trainingContent">
             <!-- Training content will be dynamically loaded here -->
+            <!-- Currently pressing the next button just shows the different steps but eventually it will have content with videos or questions about what they learned -->
         </div>
         <button id="nextButton" onclick="nextTrainingStep()">Next</button>
         <div id="progressBar">
@@ -34,6 +47,8 @@
         </div>
     </div>
 
+    <!--  TODO: 
+      Footer section of the page. Planning to make this like the header and navBar so it is consistent across all pages. -->
     <footer class="footer">
         <p>&copy; 2025 WKU HRL Handbook</p>
     </footer>

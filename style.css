@@ -1,42 +1,87 @@
-body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+/* Global Styles */
+/* TODO: Continue with the WKU Styling Guide */
+/* https://www.wku.edu/web-cms/advanced/text-styles/index.php */
+/* TODO: Some CSS content needs to be moved to its appropriate page's CSS file */
+
+/* ---------------------------------------- */
+
+/* I'm using variables to set the different colors so that I don't have to change them 
+in every location if I need to change the color for some reason sitewide.
+I can just change the variable in one location and it will change everywhere. */
+
+/* Color Variables */
+/* The names of the colors are from the WKU Style Guide */
+/* https://www.wku.edu/web-cms/best-practices/colors/ */
+
+:root {
+    --wku-red: #B01E24;
+    /* Primary WKU Red */
+    --wku-darker-red: #9A1A20;
+    /* Darker WKU Red for hover/active states */
+    --lightest-gray: #EFEFEF;
+    /* Lightest gray for backgrounds */
+    --lighter-gray: #CCCCCC;
+    /* Lighter gray for borders */
+    --muted-gray: #777777;
+    /* Muted gray for secondary text */
+    --text-gray: #555555;
+    /* Main text color */
+    --darker-gray: #333333;
+    /* Darker gray for backgrounds */
+    --black-gray: #222222;
+    /* Black-gray alternative to solid black */
 }
 
+body {
+    font-family: sans-serif;
+    /* A clean, readable font that I use in graphic design work */
+    margin: 0;
+    padding: 0;
+    background-color: var(--lightest-gray);
+    /* Light gray background from WKU style guide */
+}
+
+/* Header Section */
 header {
-    background-color: #a62929;
+    background-color: var(--wku-red);
     /* WKU Red */
+    /* https://www.wku.edu/web-cms/best-practices/colors/ */
     color: white;
     padding: 1em;
     text-align: center;
 }
 
+/* Navigation Bar */
 nav {
-    background-color: #333;
+    background-color: var(--text-gray);
+    /* Dark gray background for the navigation bar */
+    /* https://www.wku.edu/web-cms/best-practices/colors/ */
     color: white;
     padding: 0.5em;
     text-align: center;
 }
 
+/* Navigation Bar Links */
 nav a {
     color: white;
     text-decoration: none;
     padding: 0.5em 1em;
 }
 
+
 .container {
     width: 80%;
     margin: 20px auto;
     background-color: white;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px var(--muted-gray);
     border-radius: 15px;
 }
 
+/* Button Styling from WKU Styling Page */
+/* https://www.wku.edu/web-cms/best-practices/colors/ */
 .button {
-    background-color: #a62929;
+    background-color: var(--wku-red);
     color: white;
     padding: 10px 20px;
     border: none;
@@ -45,11 +90,20 @@ nav a {
     display: inline-block;
 }
 
+.button:hover {
+    background-color: var(--wku-darker-red);
+    /* Darker WKU Red on hover */
+}
+
+
+/* Sitewide Header Styling in WKU Red */
+
 h2 {
-    color: #a62929;
+    color: var(--wku-red);
     /* WKU Red */
 }
 
+/* This is the styling for the light blue on call indicator that determines whether RA's or hall directors are on call */
 .on-call-indicator {
     background-color: lightblue;
     padding: 10px;
@@ -60,24 +114,23 @@ h2 {
     /* Rounded corners */
 }
 
-.footer {
-    text-align: center;
-    padding: 1em;
-    background-color: #333;
-    color: white;
-}
-
+/* WKU Logo Styling + HTL Handbook Text */
 .logo {
     display: flex;
     align-items: center;
     text-decoration: none;
+    /* Remove underline from link: Links to the Home Page*/
+    /* This took me a while to find but here's the link to the W3 schools: https://www.w3schools.com/css/css_text_decoration.asp#:~:text=Try%20it%20Yourself%20%C2%BB-,A%20Small%20Tip,-All%20links%20in */
     color: white;
 }
 
+/* Logo Styling */
 .wku-logo {
     height: 50px;
     margin-right: 10px;
 }
+
+/* About Me Section Styling (Centered Content) */
 
 #profile-image {
     max-width: 300px;
@@ -92,15 +145,22 @@ h2 {
     text-align: center;
 }
 
+
+/* Contact Information Section Styling to Indent the PFT Hall Numbers */
+
 #phoneNumIndent {
     padding-left: 20px;
 }
 
+
+/* This styling is to limit the width of the welcome information text on the first page. */
+/* I figured it would allow me to use it with other things in the future that I only want to be 50% width */
 #halfSpread {
     width: 50%;
 }
 
-/* Style for <details> dropdowns */
+/* Style for <details> dropdowns for Phone Numbers */
+
 details {
     padding: 5px;
     width: 450px;
@@ -113,20 +173,28 @@ details summary {
     cursor: pointer;
     font-weight: bold;
     padding: 5px;
-    background-color: #e0e0e0;
+    background-color: var(--lightest-gray);
     /* Light gray background */
     border-radius: 5px;
     /* Match outer border radius */
-    border: 1px solid #ccc;
+    border: 1px solid var(--lighter-gray);
 }
 
 details[open] summary {
-    background-color: #d6d6d6;
+    background-color: var(--lighter-gray);
     /* Slightly darker when open */
 }
 
 /* Optional hover effect for details summary */
 details summary:hover {
-    background-color: #ccc;
-    /* Slightly darker on hover */
+    background-color: var(--lighter-gray)
+        /* Slightly darker on hover */
+}
+
+/* Footer Styling */
+.footer {
+    text-align: center;
+    padding: 1em;
+    background-color: var(--darker-gray);
+    color: white;
 }

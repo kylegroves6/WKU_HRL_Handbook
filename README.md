@@ -61,40 +61,6 @@ This project aims to create a user-friendly website that serves as a single sour
 
 ---
 
-## Project Structure
-
-wku-hrl-handbook/
-├── README.md # Project documentation
-├── index.html # Main homepage
-├── about/ # About page folder
-│ ├── about.html # About page
-│ ├── about.js # About page script
-├── faq.html # FAQ page
-├── questionboard/ # Question Board folder
-│ ├── questionboard.html # Question Board page
-│ ├── questionboard.js # Question Board script
-├── training/ # Training page folder
-│ ├── training.html # Training page
-│ ├── training.js # Training page script
-├── images/ # Images folder
-│ ├── kyle_groves.jpg # Profile image
-│ ├── wku_logo.png # WKU logo
-│ ├── favicon.ico # Favicon file
-│ ├── favicon-16x16.png # Favicon (16x16)
-│ ├── favicon-32x32.png # Favicon (32x32)
-│ ├── android-chrome-192x192.png # Favicon (Android)
-│ ├── android-chrome-512x512.png # Favicon (Android)
-│ └── site.webmanifest # Web manifest file for favicons
-├── css/ # CSS folder
-│ └── style.css # Main stylesheet
-├── js/ # JavaScript folder
-│ ├── header.js # Shared header script
-│ ├── nav.js # Shared navigation script
-│ ├── script.js # General JavaScript file
-└── me.csv # CSV file containing About Me data
-
----
-
 ## Getting Started
 
 1. Clone the repository: `git clone [repository URL]`.

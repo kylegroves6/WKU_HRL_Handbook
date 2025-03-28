@@ -1,3 +1,30 @@
+/* I'm using variables to set the different colors so that I don't have to change them 
+in every location if I need to change the color for some reason sitewide.
+I can just change the variable in one location and it will change everywhere. */
+
+/* Color Variables */
+/* The names of the colors are from the WKU Style Guide */
+/* https://www.wku.edu/web-cms/best-practices/colors/ */
+
+:root {
+    --wku-red: #B01E24;
+    /* Primary WKU Red */
+    --wku-darker-red: #9A1A20;
+    /* Darker WKU Red for hover/active states */
+    --lightest-gray: #EFEFEF;
+    /* Lightest gray for backgrounds */
+    --lighter-gray: #CCCCCC;
+    /* Lighter gray for borders */
+    --muted-gray: #777777;
+    /* Muted gray for secondary text */
+    --text-gray: #555555;
+    /* Main text color */
+    --darker-gray: #333333;
+    /* Darker gray for backgrounds */
+    --black-gray: #222222;
+    /* Black-gray alternative to solid black */
+}
+
 /* FAQ Page Styles */
 .faq-container {
     max-width: 900px;
@@ -19,41 +46,22 @@
 .faq-search-bar input {
     width: 60%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--lighter-gray);
     border-radius: 5px 0 0 5px;
 }
 
 .faq-search-bar button {
     padding: 10px 20px;
-    background-color: #a62929; /* WKU Red */
+    background-color: var(--wku-red);
+    /* WKU Red */
     color: white;
     border: none;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
 }
 
-.faq-categories {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.category-btn {
-    padding: 10px 15px;
-    background-color: #f4f4f4;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.category-btn.active {
-    background-color: #a62929; /* WKU Red */
-    color: white;
-}
-
 .faq-list .faq-item {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid var(--lighter-gray);
 }
 
 .faq-question {
@@ -66,7 +74,8 @@
 }
 
 .faq-answer {
-    display: none; /* Hidden by default */
+    display: none;
+    /* Hidden by default */
     padding: 15px;
 }
 
