@@ -1,107 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WKU HRL Handbook</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js" defer></script>
+    <script src="../nav.js" defer></script>
+    <script src="../header.js" defer></script>
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
 
     <header>
-        <h1>WKU HRL Handbook</h1>
+        <div id="headerContainer"></div>
     </header>
 
-    <nav>
-        <a href="#">Home</a> |
-        <a href="#">FAQ</a> |
-        <a href="#">Training</a> |
-        <a href="#">Contact</a>
-    </nav>
+    <div id="navContainer"></div>
 
     <div class="container">
-        <section class="search-bar">
-            <input type="text" placeholder="Search FAQs...">
-            <button>Search</button>
-        </section>
+        <h2>Welcome to WKU Housing & Residence Life</h2>
+        <p id="halfSpread">Welcome to the WKU Housing & Residence Life Handbook! This site is designed to provide you
+            with quick access to
+            important information and resources. If you have any questions, please contact your Hall Director or the
+            Housing & Residence Life Office.</p>
 
         <section class="quick-links">
-            <a href="#" class="button">StarRez</a>
-            <a href="#" class="button">WhenToWork</a>
-            <a href="#" class="button">Notifii</a>
+            <a href="https://wku.starrezhousing.com/StarRezWeb" target="_blank" class="button">StarRez</a>
+            <a href="https://whentowork.com/logins.htm" target="_blank" class="button">WhenToWork</a>
+            <a href="https://portal.notifii.com/login.php" target="_blank" class="button">Notifii</a>
         </section>
 
         <section class="on-call-info">
             <h2>On-Call Information</h2>
             <div class="on-call-indicator">
-                <!-- Dynamic content here (JavaScript would update this) -->
-                <p><strong>Current On-Call:</strong> RA John Doe (Hall: Barnes)</p>
+                <!-- Dynamic content here (JavaScript updates this) -->
+                <p id="onCallIndicator"></p>
             </div>
         </section>
 
-        <section class = "contact-information">
+        <hr>
+
+        <section class="contact-information">
             <details>
                 <summary>Emergency and Important Contact Information</summary>
                 <p><strong>Emergency:</strong> 911</p>
-                <p><strong>WKU Police Department:</strong> (270) 745-2548 <a href="https://www.wku.edu/police/index.php">(More Information)</a></p>
-                <p><strong>Evening Escort Service:</strong> (270) 745-3333 <a href="https://www.wku.edu/police/escortshomepage.php">(More Information)</a></p>
+                <p><strong>WKU Police Department:</strong> (270) 745-2548 <a
+                        href="https://www.wku.edu/police/index.php">(More Information)</a></p>
+                <p><strong>Evening Escort Service:</strong> (270) 745-3333 <a
+                        href="https://www.wku.edu/police/escortshomepage.php">(More Information)</a></p>
                 <p><strong>After Hours Emergency Maintenance:</strong> (270) 745-2548</p>
                 <p><strong>Facilities Management:</strong> (270) 745-3253</p>
                 <p><strong>Housing & Residence Life Office:</strong> (270) 745-4359</p>
             </details>
 
-            <div class="dropdown">
-                <button class="dropbtn">Hall Front Desk Numbers</button>
-                <div class="dropdown-content">
-                    <a href="#">Bates Runner Hall: (270) 936-2255</a>
-                    <a href="#">Douglas Keen Hall: (270) 936-0246</a>
-                    <a href="#">Gilbert Hall: (270) 936-2595</a>
-                    <a href="#">Hilltopper Hall: (270) 936-0015</a>
-                    <a href="#">Hugh Poland Hall: (270) 936-2191</a>
-                    <a href="#">McCormack Hall: (270) 936-3191</a>
-                    <a href="#">McLean Hall: (270) 936-3991</a>
-                    <a href="#">Meredith Hall: (270) 936-0196</a>
-                    <a href="#">Minton Hall: (270) 936-4756</a>
-                    <a href="#">Munday Hall: (270) 936-3494</a>
-                    <a href="#">Normal Hall: (270) 936-0499</a>
-                    <a href="#">Pearce Ford Tower: (270) 936-2442</a>
-                    <a href="#">Regents Hall: (270) 936-0494</a>
-                    <a href="#">Rodes Harlin Hall: (270) 936-4691</a>
-                    <a href="#">Southwest Hall: (270) 936-3092</a>
-                    <a href="#">Zacharias Hall: (270) 936-0219</a>
-                </div>
-            </div>
+            <details>
+                <summary>Hall Front Desk Numbers</summary>
+                <p><strong>Bates Runner Hall:</strong> (270) 936-2255</p>
+                <p><strong>Douglas Keen Hall:</strong> (270) 936-0246</p>
+                <p><strong>Gilbert Hall:</strong> (270) 936-2595</p>
+                <p><strong>Hilltopper Hall:</strong> (270) 936-0015</p>
+                <p><strong>Hugh Poland Hall:</strong> (270) 936-2191</p>
+                <p><strong>McCormack Hall:</strong> (270) 936-3191</p>
+                <p><strong>McLean Hall:</strong> (270) 936-3991</p>
+                <p><strong>Meredith Hall:</strong> (270) 936-0196</p>
+                <p><strong>Minton Hall:</strong> (270) 936-4756</p>
+                <p><strong>Munday Hall:</strong> (270) 936-3494</p>
+                <p><strong>Normal Hall:</strong> (270) 936-0499</p>
+                <p><strong>Regents Hall:</strong> (270) 936-0494</p>
+                <p><strong>Rodes Harlin Hall:</strong> (270) 936-4691</p>
+                <p><strong>Southwest Hall:</strong> (270) 936-3092</p>
+                <p><strong>Zacharias Hall:</strong> (270) 936-0219</p>
+                <p><strong>Pearce Ford Tower:</strong> (270) 936-2442</p>
+            </details>
+
+            <details>
+                <summary>On-Call Numbers</summary>
+
+                <!-- Hall Phone Numbers -->
+                <p><strong>Bates Runner Hall:</strong> (270) 936-2255</p>
+                <p><strong>Douglas Keen Hall:</strong> (270) 936-0246</p>
+                <p><strong>Gilbert Hall:</strong> (270) 936-2595</p>
+                <p><strong>Hilltopper Hall:</strong> (270) 936-0015</p>
+                <p><strong>Hugh Poland Hall:</strong> (270) 936-2191</p>
+                <p><strong>McCormack Hall:</strong> (270) 936-3191</p>
+                <p><strong>McLean Hall:</strong> (270) 936-3991</p>
+                <p><strong>Meredith Hall:</strong> (270) 936-0196</p>
+                <p><strong>Minton Hall:</strong> (270) 936-4756</p>
+                <p><strong>Munday Hall:</strong> (270) 936-3494</p>
+                <p><strong>Normal Hall:</strong> (270) 936-0499</p>
+                <p><strong>Regents Hall:</strong> (270) 936-0494</p>
+                <p><strong>Rodes Harlin Hall:</strong> (270) 936-4691</p>
+                <p><strong>Southwest Hall:</strong> (270) 936-3092</p>
+                <p><strong>Zacharias Hall:</strong> (270) 936-0219</p>
+                <P>
+                    <strong>Pearce Ford Tower:</strong>
+                <p id="phoneNumIndent">
+                    Floors 1–14:
+                    <br>
+                    <span id="phoneNumIndent">(270) 935-8738</span>
+                    <br>Floors 15–27:
+                    <br>
+                    <span id="phoneNumIndent">(270) 799-2793</span>
+                    <br>Community Assistant:
+                    <br>
+                    <span id="phoneNumIndent">(270) 790-7641</span>
+                </p>
+                </P>
+
+
+                <!-- KY Street Apartments -->
+                <h2>KY Street Apartments</h2>
+                <p><strong>KY Street Apartments:</strong> (270) 599-2398</p>
+
+                <hr>
+
+                <!-- Hall Director On-Call -->
+                <h2>Hall Director On-Call</h2>
+                <p><strong>Please call the number below to reach a Hall Director On-Call:</strong></p>
+                <p>(Evenings after 6pm and weekends)</p>
+
+                <p><strong>North End RHD On-Call:</strong><br>
+                    Centennial Village, The Valley, KY Street Apartments<br>
+                    (270) 792-6436</p>
+
+                <p><strong>South End RHD On-Call:</strong><br>
+                    First-Year Village<br>
+                    (270) 799-8018</p>
+
+                <p><strong>If you are unable to reach either of the RHDs On-Call:</strong><br>
+                    Area Coordinator On-Call<br>
+                    (270) 779-1454</p>
+
+            </details>
+
         </section>
+
+        <hr>
 
         <section class="updates">
             <h2>Announcements</h2>
             <ul>
-                <li>[Date] Policy Update: New guest policy effective immediately.</li>
+                <li>[3/27/2025] Policy Update: New guest policy effective immediately.</li>
                 <!-- More announcements here -->
             </ul>
         </section>
 
         <section class="quick-tip">
             <h2>Quick Tip</h2>
-            <p>Always check the expiration date on temporary access cards!</p>
+            <p>Always check the birthdate on driver's licenses to ensure 18+</p>
         </section>
 
         <section class="training-resources">
             <h2>Training Resources</h2>
-            <a href="#" class="button">StarRez Training</a>
-            <a href="#" class="button">WhenToWork Training</a>
-            <a href="#" class="button">Notifii Training</a>
+            <a href="../training/training.html" class="button">StarRez Training</a>
+            <a href="../training/training.html" class="button">WhenToWork Training</a>
+            <a href="../training/training.html" class="button">Notifii Training</a>
         </section>
 
-        <section class = "communication-forum">
-            <h2>Communication Forum</h2>
-            <a href="#" class = "button">Forum</a>
-        </section>
     </div>
 
-    <footer class = "footer">
+    <footer class="footer">
         <p>&copy; 2025 WKU HRL Handbook</p>
     </footer>
 
 </body>
+
 </html>

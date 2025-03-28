@@ -1,4 +1,5 @@
 # WKU HRL Handbook
+
 Website to compile information for use by RAs and Desk Assistants at WKU
 
 ## Project Overview
@@ -13,34 +14,34 @@ Current training and information dissemination for DAs and RAs is fragmented and
 
 This project aims to create a user-friendly website that serves as a single source of truth for all information relevant to DAs and RAs. The website will include:
 
-*   **Searchable FAQ:** A comprehensive database of common questions and answers.
-*   **Quick Access Links:** Direct links to essential tools like StarRez, WhenToWork, and Notifii.
-*   **On-Call Information:** Dynamic display of on-call staff contact information.
-*   **Training Resources:** Targeted training modules for key systems and procedures.
-*   **Announcement Board:** A centralized location for important updates and policy changes from HRL management.
-*   **Communication Forum:** A platform for staff members to ask questions and share information.
-*   **Quick Tips:** Rotating tips to keep important information top-of-mind.
+- **Searchable FAQ:** A comprehensive database of common questions and answers.
+- **Quick Access Links:** Direct links to essential tools like StarRez, WhenToWork, and Notifii.
+- **On-Call Information:** Dynamic display of on-call staff contact information.
+- **Training Resources:** Targeted training modules for key systems and procedures.
+- **Announcement Board:** A centralized location for important updates and policy changes from HRL management.
+- **Communication Forum:** A platform for staff members to ask questions and share information.
+- **Quick Tips:** Rotating tips to keep important information top-of-mind.
 
 ## Features
 
-*   **User-Friendly Interface:** Intuitive design for easy navigation and information retrieval.
-*   **Mobile Responsiveness:** Accessible on smartphones, tablets, and desktop computers.
-*   **Role-Based Content:** Tailored information for DAs and RAs.
-*   **Dynamic Content:** Real-time updates for on-call schedules and announcements.
-*   **Search Functionality:** Quickly find answers to specific questions.
+- **User-Friendly Interface:** Intuitive design for easy navigation and information retrieval.
+- **Mobile Responsiveness:** Accessible on smartphones, tablets, and desktop computers.
+- **Role-Based Content:** Tailored information for DAs and RAs.
+- **Dynamic Content:** Real-time updates for on-call schedules and announcements.
+- **Search Functionality:** Quickly find answers to specific questions.
 
 ## Planned Features (Future Development)
 
-*   **Onboarding Video Track:** Mandatory training videos for new hires.
-*   **Gamification:** Quizzes and challenges to reinforce training concepts.
-*   **AI-Powered Knowledge Base:** Integration of AI to provide faster and more personalized support.
+- **Onboarding Video Track:** Mandatory training videos for new hires.
+- **Gamification:** Quizzes and challenges to reinforce training concepts.
+- **AI-Powered Knowledge Base:** Integration of AI to provide faster and more personalized support.
 
 ## Technologies Used
 
-*   **HTML:** For structuring the website content.
-*   **CSS:** For styling and visual presentation.
-*   **JavaScript:** For interactive elements and dynamic functionality.
-*   **[Potentially] PHP/MySQL:** For backend database management (if needed for advanced features).
+- **HTML:** For structuring the website content.
+- **CSS:** For styling and visual presentation.
+- **JavaScript:** For interactive elements and dynamic functionality.
+- **[Potentially] PHP/MySQL:** For backend database management (if needed for advanced features).
 
 ## Project Structure
 
@@ -88,5 +89,5 @@ We welcome contributions to improve the WKU HRL Handbook! Please follow these st
 
 ## Acknowledgements
 
-*   Western Kentucky University
-*   WKU Housing and Residence Life
+- Western Kentucky University
+- WKU Housing and Residence Life

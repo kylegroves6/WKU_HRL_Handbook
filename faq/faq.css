@@ -1,0 +1,75 @@
+/* FAQ Page Styles */
+.faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.faq-search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.faq-search-bar input {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.faq-search-bar button {
+    padding: 10px 20px;
+    background-color: #a62929; /* WKU Red */
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.faq-categories {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.category-btn {
+    padding: 10px 15px;
+    background-color: #f4f4f4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.category-btn.active {
+    background-color: #a62929; /* WKU Red */
+    color: white;
+}
+
+.faq-list .faq-item {
+    border-bottom: 1px solid #ccc;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.faq-answer {
+    display: none; /* Hidden by default */
+    padding: 15px;
+}
+
+.toggle-icon {
+    font-size: 20px;
+}
