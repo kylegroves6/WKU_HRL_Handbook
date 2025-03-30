@@ -17,7 +17,13 @@ const totalSteps = 5; // Total number of training steps
 function nextTrainingStep() {
     if (currentStep < totalSteps) {
         currentStep++; // Increment the current step
-        updateProgress(); // Update the progress bar
+
+        // TODO: Update the progress bar (not implemented in this snippet)
+        // Assume updateProgress is a function that updates the progress bar
+        // updateProgress(); 
+        // Update the progress bar
+
+
         loadNextStepContent(); // Load content for the next step
     }
 }
