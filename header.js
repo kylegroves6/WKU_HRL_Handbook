@@ -4,8 +4,8 @@
 function loadHeader() {
     const headerHTML = `
         <header>
-            <a href="../index.html" class="logo">
-                <img src="../images/wku_logo.png" alt="WKU Logo" class="wku-logo">
+            <a href="index.html" class="logo">
+                <img src="wku_logo.png" alt="WKU Logo" class="wku-logo">
                 <h1>HRL Handbook</h1>
             </a>
         </header>

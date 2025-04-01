@@ -4,10 +4,10 @@
 function loadNavigation() {
     const navHTML = `
         <nav>
-            <a href="../index.html">Home</a> |
-            <a href="../about.html">About</a> |
-            <a href="../faq/faq.html">FAQ</a> |
-            <a href="../training/training.html">Training</a>
+            <a href="index.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="faq.html">FAQ</a> |
+            <a href="training.html">Training</a>
         </nav>
     `;
     document.getElementById('navContainer').innerHTML = navHTML;
