@@ -1,0 +1,66 @@
+#trainingContent {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    padding: 16px;
+    border-radius: 8px;
+    min-height: 20px;
+    max-width: 800px;
+    margin-left: auto;
+}
+
+#pdfProgressContainer {
+    width: 100%;
+    margin-bottom: 10px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pdfProgressBar {
+    width: 100%;
+    height: 24px;
+    appearance: none;
+}
+
+#pdfProgressBar::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 12px;
+}
+
+#pdfProgressBar::-webkit-progress-value {
+    background-color: #4caf50;
+    border-radius: 12px;
+}
+
+#pdfProgressBar::-moz-progress-bar {
+    background-color: #4caf50;
+    border-radius: 12px;
+}
+
+#nextBtn {
+    display: block;
+    margin: 20px auto 10px auto;
+    padding: 12px 32px;
+    font-size: 1em;
+    background: #1976d2;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#nextBtn:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+}
+
+#iframe,
+#pdfViewer {
+    display: block;
+    margin: 0 auto 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 800px;
+    min-height: 400px;
+    background: #fff;
+}

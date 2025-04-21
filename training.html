@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Training - WKU HRL Handbook</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="training.css">
     <script src="training.js" defer></script>
     <script src="script.js" defer></script>
     <script src="nav.js" defer></script>
@@ -33,25 +34,21 @@
     <!-- **NOTE:**
         I currently have a link to the Google Drive folder with all of the PDFS provided to new hires. I will derive content for this page from it in the final version -->
     <div class="container">
-        <p>Possible PDF Content to Derive for Draft 3: <a
-                href="https://drive.google.com/drive/folders/15J8VVRCH2LqxhtN8i2mb6Nhahme0Fi_M?usp=sharing">Google Drive
-                Link w/ PDFs</a></p>
-        <h2>Training Tracks</h2>
-        <div id="trainingContent">
-            <!-- Training content will be dynamically loaded here -->
-            <!-- Currently pressing the next button just shows the different steps but eventually it will have content with videos or questions about what they learned -->
-        </div>
-        <button id="nextButton" onclick="nextTrainingStep()">Next</button>
+        <h2>Training Track</h2>
+        <!-- <div id="trainingContent">
+            Training pdfs will be loaded here
+        </div> -->
+        <span id="trainingContent"></span>
+        <button id="nextBtn" onclick="nextTrainingStep()">Next</button>
 
-        <!-- TODO: Need to implement this progress bar in the final version -->
-        <div id="progressBar">
-            <div id="progress"></div>
+        <div id="pdfProgressContainer">
+            <progress id="pdfProgressBar" value="0" max="3"></progress>
         </div>
-
+        <iframe id="pdfViewer" width="auto" height="auto"></iframe>
+        <br>
     </div>
 
-    <!--  TODO: 
-      Footer section of the page. Planning to make this like the header and navBar so it is consistent across all pages. -->
+    <!-- Footer section of the page. -->
     <footer class="footer">
         <p>&copy; 2025 WKU HRL Handbook</p>
     </footer>
