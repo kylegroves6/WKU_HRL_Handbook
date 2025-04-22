@@ -18,12 +18,6 @@ function nextTrainingStep() {
     if (currentStep < totalSteps) {
         currentStep++; // Increment the current step
 
-        // TODO: Update the progress bar (not implemented in this snippet)
-        // Assume updateProgress is a function that updates the progress bar
-        // updateProgress(); 
-        // Update the progress bar
-
-
         loadNextStepContent(); // Load content for the next step
     }
 }
@@ -31,7 +25,7 @@ function nextTrainingStep() {
 /**
  * Loads content for the current training step based on predefined steps.
  */
-loadNextStepContent(); // Load first step content
+loadNextStepContent(); // Load first step content, else it blank on page load.
 
 function loadNextStepContent() {
     const trainingContent = document.getElementById('trainingContent'); // Get the training content container
@@ -44,9 +38,9 @@ function loadNextStepContent() {
     trainingContent.innerText = steps[currentStep]; // Display content for the current step
 }
 
-/**
- * TODO: progress bar to reflect the user's current position in the training.
- */
+// Array that holds the PDF URLs
+// uses the getElementById method to get the PDF viewer and progress bar elements
+// Button Clicks call the showPDF function to display the PDF
 
 const pdfs = [
     'https://drive.google.com/file/d/1Q0U2B6SwOsDcZeyyHQV5VBMINlYcd6cp/preview',

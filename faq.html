@@ -12,6 +12,11 @@
     <script src="nav.js" defer></script>
     <script src="header.js" defer></script>
     <script src="faq.js" defer></script>
+    <!-- Better search for the FAQs. Find in faq.js for more info \/ -->
+    <script src="faq-search.js" defer></script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="https://unpkg.com/mark.js/dist/mark.min.js"></script> <!-- For highlighting -->
+    <!-- Favicon Below -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
 </head>
@@ -35,17 +40,17 @@
         <!-- Search Bar -->
         <div class="faq-search-bar">
             <input type="text" id="searchInput" placeholder="Type keywords here. i.e. 'Guest' or 'Key'">
-            <button id="searchButton">Search</button>
         </div>
 
         <!-- FAQ List -->
         <!-- The FAQ list Contains frequently asked questions that new employees may have on the job -->
         <!-- The FAQ list uses CSS to format the drop downs and also to provide spacing and styling-->
+
         <div id="faqList" class="faq-list">
 
             <div class="faq-item">
                 <div class="faq-question">
-                    Can somebody who is under the age of 18 ever check in?
+                    <span class="faq-question-text">Can somebody who is under the age of 18 ever check in?</span>
                     <span class="toggle-icon">+</span>
                 </div>
                 <div class="faq-answer">
@@ -57,7 +62,7 @@
 
             <div class="faq-item">
                 <div class="faq-question">
-                    How long can a guest stay in the dorm?
+                    <span class="faq-question-text">How long can a guest stay in the dorm?</span>
                     <span class="toggle-icon">+</span>
                 </div>
                 <div class="faq-answer">
@@ -68,7 +73,8 @@
 
             <div class="faq-item">
                 <div class="faq-question">
-                    How much does it cost for a spare key if I lose my original key?
+                    <span class="faq-question-text">How much does it cost for a spare key if I lose my original
+                        key?</span>
                     <span class="toggle-icon">+</span>
                 </div>
                 <div class="faq-answer">
@@ -79,7 +85,8 @@
 
             <div class="faq-item">
                 <div class="faq-question">
-                    Do I have to go home for breaks such as summer break, fall break, winter break, or spring break?
+                    <span class="faq-question-text">Do I have to go home for breaks such as summer break, fall break,
+                        winter break, or spring break?</span>
                     <span class="toggle-icon">+</span>
                 </div>
                 <div class="faq-answer">
@@ -89,7 +96,7 @@
 
             <div class="faq-item">
                 <div class="faq-question">
-                    What happens if I lose my ID?
+                    <span class="faq-question-text">What happens if I lose my ID?</span>
                     <span class="toggle-icon">+</span>
                 </div>
                 <div class="faq-answer">
@@ -101,7 +108,7 @@
 
             <div class="faq-item">
                 <div class="faq-question">
-                    Can food deliveries be held at the desk?
+                    <span class="faq-question-text">Can food deliveries be held at the desk?</span>
                     <span class="toggle-icon">+</span>
                 </div>
                 <div class="faq-answer">
@@ -112,7 +119,8 @@
 
             <div class="faq-item">
                 <div class="faq-question">
-                    What should I do if I don’t know the answer to a resident’s question?
+                    <span class="faq-question-text">What should I do if I don’t know the answer to a resident’s
+                        question?</span>
                     <span class="toggle-icon">+</span>
                 </div>
                 <div class="faq-answer">
@@ -123,7 +131,8 @@
 
             <div class="faq-item">
                 <div class="faq-question">
-                    Can I share information about residents with parents or guardians?
+                    <span class="faq-question-text">Can I share information about residents with parents or
+                        guardians?</span>
                     <span class="toggle-icon">+</span>
                 </div>
                 <div class="faq-answer">
@@ -134,7 +143,7 @@
 
             <div class="faq-item">
                 <div class="faq-question">
-                    Do residence halls provide trash bags and recycling bags?
+                    <span class="faq-question-text">Do residence halls provide trash bags and recycling bags?</span>
                     <span class="toggle-icon">+</span>
                 </div>
                 <div class="faq-answer">
@@ -144,7 +153,8 @@
 
             <div class="faq-item">
                 <div class="faq-question">
-                    How do I check someone into the building as a guest under a resident?
+                    <span class="faq-question-text">How do I check someone into the building as a guest under a
+                        resident?</span>
                     <span class="toggle-icon">+</span>
                 </div>
                 <div class="faq-answer">
@@ -157,10 +167,10 @@
                 </div>
             </div>
 
-            <!-- Add more FAQs here later -->
+            <!-- Add more FAQs here -->
         </div>
-
     </div>
+
 
     <!-- Footer section of the page. -->
     <footer class="footer">

@@ -26,44 +26,41 @@ I can just change the variable in one location and it will change everywhere. */
 }
 
 /* FAQ Page Styles */
+
+/* Container for the entire FAQ section */
 .faq-container {
     max-width: 900px;
     margin: 0 auto;
 }
 
+/* Title of the FAQ section */
 .faq-title {
     text-align: center;
     font-size: 28px;
     margin-bottom: 20px;
 }
 
+/* Search bar container for the FAQ section */
 .faq-search-bar {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }
 
+/* Input field for the FAQ search bar */
 .faq-search-bar input {
     width: 60%;
     padding: 10px;
-    border: 1px solid var(--lighter-gray);
-    border-radius: 5px 0 0 5px;
+    border: 1.5px solid var(--lighter-gray);
+    border-radius: 5px;
 }
 
-.faq-search-bar button {
-    padding: 10px 20px;
-    background-color: var(--wku-red);
-    /* WKU Red */
-    color: white;
-    border: none;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-}
-
+/* List of FAQ items */
 .faq-list .faq-item {
     border-bottom: 1px solid var(--lighter-gray);
 }
 
+/* Question section of each FAQ item */
 .faq-question {
     display: flex;
     justify-content: space-between;
@@ -73,12 +70,14 @@ I can just change the variable in one location and it will change everywhere. */
     cursor: pointer;
 }
 
+/* Answer section of each FAQ item (hidden by default) */
 .faq-answer {
     display: none;
-    /* Hidden by default */
-    padding: 15px;
+    padding: 10px;
 }
 
+/* Icon used to toggle FAQ answers */
 .toggle-icon {
+    margin-left: 10px;
     font-size: 20px;
 }

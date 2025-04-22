@@ -1,3 +1,4 @@
+// Makes sure that the DOM (Document Object Model) "page" is fully loaded before executing the script
 document.addEventListener('DOMContentLoaded', () => {
 
     /**
@@ -22,32 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const isVisible = answer.style.display === 'block';
             answer.style.display = isVisible ? 'none' : 'block';
             toggleIcon.textContent = isVisible ? '+' : '-';
-        });
-    });
-
-    /**
-     * Section: Search Functionality
-     * 
-     * Purpose:
-     * - This section implements a search feature for the FAQ page.
-     * - Users can type a query in the search bar and click the "Search" button.
-     * - The script filters FAQ items, displaying only those that match the query.
-     * 
-     * Why:
-     * - To help users quickly find answers to specific questions without manually scrolling through all FAQs.
-     */
-    const searchInput = document.getElementById('searchInput');
-    const searchButton = document.getElementById('searchButton');
-
-    searchButton.addEventListener('click', () => {
-        const query = searchInput.value.toLowerCase();
-        faqItems.forEach(item => {
-            const questionText = item.querySelector('.faq-question').textContent.toLowerCase();
-            if (questionText.includes(query)) {
-                item.style.display = 'block';
-            } else {
-                item.style.display = 'none';
-            }
         });
     });
 

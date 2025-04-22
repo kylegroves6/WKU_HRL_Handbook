@@ -1,7 +1,6 @@
 /* Global Styles */
-/* TODO: Continue with the WKU Styling Guide */
+/* WKU Styling Guide */
 /* https://www.wku.edu/web-cms/advanced/text-styles/index.php */
-/* TODO: Some CSS content needs to be moved to its appropriate page's CSS file */
 
 /* ---------------------------------------- */
 
@@ -34,7 +33,6 @@ I can just change the variable in one location and it will change everywhere. */
 
 body {
     font-family: sans-serif;
-    /* A clean, readable font that I use in graphic design work */
     margin: 0;
     padding: 0;
     background-color: var(--lightest-gray);
