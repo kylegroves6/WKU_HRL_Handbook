@@ -20,7 +20,6 @@ This project aims to create a user-friendly website that serves as a single sour
 - **Quick Access Links:** Direct links to essential tools like StarRez, WhenToWork, and Notifii.
 - **On-Call Information:** Dynamic display of on-call staff contact information.
 - **Training Resources:** Targeted training modules page for key systems and procedures.
-- **Announcement Board:** A centralized location for important updates and policy changes from HRL management.
 - **Quick Tips:**  Important information to keep on top-of-mind.
 
 ---
@@ -36,6 +35,7 @@ This project aims to create a user-friendly website that serves as a single sour
 ### 2. **Searchable FAQ Page**
    - A collapsible FAQ section styled to match modern designs.
    - Includes search functionality to quickly find answers to specific questions.
+   - Uses Lunr.js for Search and Mark.js for highlighting
 
 ### 3. **Training Page**
    - Training page with next button ready for step-by-step instructions for using StarRez, WhenToWork, and Notifii.
@@ -58,31 +58,6 @@ This project aims to create a user-friendly website that serves as a single sour
 - **HTML:** For structuring the website content.
 - **CSS:** For styling and visual presentation.
 - **JavaScript:** For interactive elements and dynamic functionality.
-
----
-
-## Getting Started
-
-1. Clone the repository: `git clone [repository URL]`.
-2. Open `index.html` in your web browser.
-
----
-
-## Contributing
-
-We welcome contributions to improve the WKU HRL Handbook! Please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix: `git checkout -b feature/your-feature-name`.
-3. Make your changes and commit them with descriptive messages.
-4. Push your changes to your forked repository: `git push origin feature/your-feature-name`.
-5. Submit a pull request to the main repository.
-
----
-
-## License
-
-[Choose a license, e.g., MIT License]
 
 ---
 
